@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-nodemailer-tutorial",
+  "version": "1.0.0",
+  "description": "An example project demonstrating how to send emails with Node.js, Nodemailer, MJML and Amazon SES.",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon",
+    "production:start": "NODE_ENV=production ts-node src/index.ts",
+    "production:dev": "NODE_ENV=production nodemon"
+  },
+  "author": "Bret Cameron",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-ses": "^3.556.0",
+    "handlebars": "^4.7.8",
+    "mjml": "^4.7.1",
+    "nodemailer": "^6.9.13"
+  },
+  "devDependencies": {
+    "@types/mjml": "^4.7.4",
+    "@types/nodemailer": "^6.4.14",
+    "nodemon": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}

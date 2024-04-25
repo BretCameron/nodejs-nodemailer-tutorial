@@ -1,0 +1,12 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text>Hello {{firstName}}</mj-text>
+        <mj-text>You've been referred by {{referrer.firstName}} {{referrer.lastName}}!</mj-text>
+        <mj-text>Click the button below to claim your account:</mj-text>
+        <mj-button href="{{loginUrl}}">Claim Account</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

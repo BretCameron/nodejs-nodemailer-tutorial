@@ -1,0 +1,12 @@
+<mjml>
+  <mj-body>
+    <mj-section>
+      <mj-column>
+        <mj-text>Hi {{firstName}},</mj-text>
+        <mj-text>You’re invited!</mj-text>
+        <mj-text>To claim your account and login, click the button below:</mj-text>
+        <mj-button href="{{loginUrl}}">Login</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
