@@ -8,6 +8,10 @@ interface ReferralEmailVariables {
     lastName: string;
   };
   loginUrl: string;
+  features?: {
+    title: string;
+    description: string;
+  }[];
 }
 
 export class ReferralEmail extends BaseEmail<ReferralEmailVariables> {

@@ -1,11 +1,44 @@
 <mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text font-size="16px" line-height="24px" color="#002" align="center" />
+      <mj-button font-size="16px" line-height="24px" width="100%" background-color="#1000B6" />
+    </mj-attributes>
+  </mj-head>
   <mj-body>
     <mj-section>
       <mj-column>
-        <mj-text>Hello {{firstName}}</mj-text>
-        <mj-text>You've been referred by {{referrer.firstName}} {{referrer.lastName}}!</mj-text>
-        <mj-text>Click the button below to claim your account:</mj-text>
-        <mj-button href="{{loginUrl}}">Claim Account</mj-button>
+        <mj-text font-size="32px" font-weight="bold" line-height="40px">You’re invited to join MyApp</mj-text>
+        <mj-text>Hello {{firstName}},</mj-text>
+        <mj-text>{{referrer.firstName}} {{referrer.lastName}} has invited you to join them on MyApp.</mj-text>
+        <mj-button width="100%" background-color="#1000B6" href="{{loginUrl}}">Claim My Account</mj-button>
+        <mj-text>If you don’t want to continue, simply ignore this email and the referral will be deleted from our system in a few days.</mj-text>
+      </mj-column>
+    </mj-section>
+
+    {{#if features.length}}
+      <mj-section background-color="#D5E5FE">
+        <mj-column>
+          <mj-text font-size="24px" font-weight="bold">Features</mj-text>
+          {{#each features}}
+            <mj-text font-weight="bold" padding-bottom="0">{{this.title}}</mj-text>
+            <mj-text>{{this.description}}</mj-text>
+          {{/each}}
+          <mj-button width="100%" background-color="#1000B6" href="{{loginUrl}}">Claim My Account</mj-button>
+        </mj-column>
+      </mj-section>
+    {{/if}}
+
+    <mj-section>
+      <mj-column>
+        <mj-text padding-bottom="0">Best wishes,<br />The MyApp Team</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#F5F5F5">
+      <mj-column>
+        <mj-text font-size="12px" line-height="16px" align="left">Click here to <a href="https://example.com" style="text-decoration: underline; color: #002;">unsubscribe</a>.</mj-text>
+        <mj-text font-size="12px" line-height="16px" align="left">For more information about how we treat the information you provide please refer to our <a href="https://example.com" style="text-decoration: underline; color: #002;">Privacy Policy</a> and <a href="https://example.com" style="text-decoration: underline; color: #002;">Terms and Conditions</a>.</mj-text>
       </mj-column>
     </mj-section>
   </mj-body>
