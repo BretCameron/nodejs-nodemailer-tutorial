@@ -1,4 +1,4 @@
-# Node.js Email Sending Pattern
+# Node.js Nodemailer Tutorial Project
 
 This project is an example of a pattern for sending emails in Node.js using Nodemailer, MJML, Handlebars, and Amazon SES.
 
