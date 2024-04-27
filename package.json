@@ -6,8 +6,8 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "dev": "nodemon",
-    "production:start": "NODE_ENV=production ts-node src/index.ts",
-    "production:dev": "NODE_ENV=production nodemon"
+    "start:production": "NODE_ENV=production ts-node src/index.ts",
+    "dev:production": "NODE_ENV=production nodemon"
   },
   "author": "Bret Cameron",
   "license": "ISC",
